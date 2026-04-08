@@ -1,100 +1,44 @@
-/* Paramètres de base pour toute la page */
-* {
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site de Vente</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Couleur grise claire simple */
-}
+<div class="ma-barre-haut">
+    <div class="le-logo"><span>E</span>-commerce</div>
 
-/* LA BARRE DU HAUT */
-.ma-barre-nav {
-    display: flex;
-    padding: 20px;
-    background-color: white;
-}
+    <div class="menu-liste">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Boutique</a></li>
+            <li><a href="#">PC Gamer</a></li>
+            <li><a href="#">Accessoires</a></li> <li><a href="#">Panier</a></li> </ul>
+    </div>
 
-.mon-logo {
-    font-size: 40px;
-    font-weight: bold;
-    width: 30%; /* Pour espacer */
-}
+    <div class="bloc-boutons">
+        <button class="btn1">Connexion</button>
+        <button class="btn2">Inscription</button>
+    </div>
+</div>
 
-.mon-logo span {
-    color: blue; /* Utilisation de noms de couleurs simples */
-}
+<div class="contenu-page">
+    <div class="cote-gauche">
+        <h1><span>Puissance</span> et performance<br>Versatilité</h1>
 
-.mes-liens {
-    width: 70%;
-}
+        <p>Découvrez notre site e-commerce dédié aux passionnés de gaming, où performance et puissance se rencontrent ! Nous proposons une gamme complète de PC pour gamers, spécialement conçus pour offrir une expérience de jeu immersive et fluide.</p>
 
-.mes-liens ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-    margin-top: 15px;
-}
+        <p>Que vous soyez un joueur compétitif à la recherche de vitesse et de précision ou un amateur de graphismes époustouflants, nos machines sont équipées des derniers processeurs, cartes graphiques et technologies de refroidissement pour répondre à tous vos besoins.</p>
 
-.mes-liens a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
+        <p>Profitez d'offres exclusives, d'une livraison rapide et d'un service client dédié pour faire passer votre setup gaming au niveau supérieur.</p>
 
-/* SECTION AVEC LE TEXTE ET L'IMAGE */
-.contenu {
-    display: flex;
-    margin-top: 50px;
-    padding: 50px;
-}
+        <button class="bouton-achat">Acheter maintenant</button> </div>
 
-.partie-gauche {
-    width: 50%;
-}
+    <div class="cote-droit">
+        <div class="forme-deco"></div> <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" class="image-pc" alt="Photo PC">
+    </div>
+</div>
 
-.partie-gauche h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.partie-gauche span {
-    color: blue;
-}
-
-.partie-gauche p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* LE BOUTON */
-.bouton-bleu {
-    background-color: blue;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* LA PARTIE DROITE */
-.partie-droite {
-    width: 50%;
-}
-
-/* Le rond bleu derrière */
-.rond-bleu {
-    width: 500px;
-    height: 500px;
-    background-color: blue;
-    border-radius: 300px; /* Un gros chiffre pour faire un rond */
-    position: absolute;
-    right: -100px;
-    z-index: -1; /* Pour que ça reste derrière */
-}
-
-.image-du-produit {
-    width: 100%;
-}
+</body>
+</html>
